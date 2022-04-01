@@ -1,6 +1,0 @@
-changement du code :
-
-- git add *
-- git commit -m "Ce que t'as fait"
-- git push
-(si t sur que c bien ce que t'as fait)
