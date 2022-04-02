@@ -18,12 +18,10 @@
     padding-left: 20px;
     font-size: 1.5rem;
     margin: .5rem;
+
 }
-.brand-title a{
-    font-size: 1.5rem;
-    margin: .5rem;
-    text-decoration: none;
-    color: whitesmoke;
+.brand-title img{
+    width: 200px;
 }
 
 .navbar-links {
@@ -74,7 +72,6 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
     .toggle-button {
         display: flex;
     }
