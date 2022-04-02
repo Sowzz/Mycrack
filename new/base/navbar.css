@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
+* {
+    margin: 0px;
+}
 .navbar {
     display: flex;
     position: relative;
@@ -8,11 +11,18 @@
     background-color: #24252a;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
+    padding: 0.5vw;
 }
 
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
+}
+.brand-title a{
+    font-size: 1.5rem;
+    margin: .5rem;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .navbar-links {
