@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
 body {
     background-color: #24252A;
+}
+
+.txt {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 200px;
+    color: #edf0f1;
+    text-align: center;
+}
+
+.txt h1 {
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 601px) {
+    .txt h1{
+      font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .txt h1{
+      font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .txt h2{
+      font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .txt h2{
+      font-size: 15px;
+    }
 }
