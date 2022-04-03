@@ -2,11 +2,62 @@ body {
     background-color: #24252A;
 }
 
-.progress-bar {
-    background: #ff4163;
-    height: 5px;
-    width: 0%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+.game img{
+    width: 300px;
+    border-radius: 3px;
+}
+.game {
+    list-style: none;
+}
+.GameGrid {
+    padding-top: 100px;
+    display: grid;
+    grid-gap: 3em;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width: 320px){
+    .GameGrid img{
+        width: 70vw;
+    }
+}
+@media (min-width: 720px){
+    .GameGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1070px){
+    .GameGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1390px){
+    .GameGrid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1790px){
+    .GameGrid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.page {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 50px;
+    background-color: #46464b;
+    border: solid #46464b 12px;
+    border-radius: 15px;
+}
+.page a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
 }

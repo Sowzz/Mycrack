@@ -44,7 +44,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 500px;
+  padding-top: 480px;
+}
+@media screen and (max-height: 860px) {
+  .bt{
+    padding-top: 200px;
+  }
+}
+@media screen and (max-height: 580px) {
+  .bt{
+    padding-top: 50px;
+  }
+}
+@media screen and (max-height: 180px) {
+  .bt{
+    position: sticky;
+    top: 20px;
+
+  }
 }
 
 .bn {

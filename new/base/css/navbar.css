@@ -3,12 +3,13 @@
 * {
     margin: 0px;
 }
+
 .navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #24252a;
+    background-color: #23242b;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     padding: 0.5vw;
