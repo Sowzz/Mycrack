@@ -38,3 +38,57 @@ body {
       font-size: 15px;
     }
 }
+
+
+.bt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 500px;
+}
+
+.bn {
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border: 3px solid whitesmoke;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: whitesmoke;
+  text-align: center;
+  transition: all 0.2s;
+  animation: bnbouncy 5s infinite linear;
+  position: relative;
+}
+
+.bn:hover {
+  background-color: #edf0f1;
+  color: whitesmoke;
+}
+
+@keyframes bnbouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}

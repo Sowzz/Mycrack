@@ -9,7 +9,40 @@
 </head>
 <body>
 
-  <link rel="stylesheet" href="../base/navbar.css">
+  <style class="scroll-bar">
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+
+    } 
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #009578;
+
+    }
+</style>
+
+<style class="text-selection">
+    ::selection {
+        background-color: darkblue;
+        color: white;
+    }
+
+    ::-moz-selection {
+    background-color: darkblue;
+    color: white;
+    }   
+</style>
+
+  <div class="progress-bar" id="progressBar"></div>  
+  <script src="../base/js/progresse-bar.js"></script>
+
+  <link rel="stylesheet" href="../base/css/navbar.css">
   <nav class="navbar">
     <div class="brand-title"><a href="../menu/menu.html"><img src="../base/mycrack.png" alt=""></a></div>
     <a href="#" class="toggle-button">
