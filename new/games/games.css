@@ -1,13 +1,24 @@
 body {
     background-color: #24252A;
-}
 
+}
 .game img{
     width: 300px;
     border-radius: 3px;
+    display: flex;
+    
 }
 .game {
     list-style: none;
+    background-color: #46464b;
+    border: solid #46464b 1vw;
+    border-radius: 15px;
+    display: inline-block;
+}
+.game h1{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 .GameGrid {
     padding-top: 100px;
@@ -16,32 +27,32 @@ body {
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
+    justify-content: space-around;
 }
 @media (max-width: 320px){
     .GameGrid img{
         width: 70vw;
     }
+    .GameGrid h1{
+        font-size: 5vw;
+    }
 }
 @media (min-width: 720px){
     .GameGrid{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 20em);
     }
 }
-@media (min-width: 1070px){
+@media (min-width: 1268px){
     .GameGrid{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 20.5em);
     }
 }
-@media (min-width: 1390px){
+@media (min-width: 1510px){
     .GameGrid{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 21em);
     }
 }
-@media (min-width: 1790px){
-    .GameGrid{
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
