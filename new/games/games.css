@@ -1,6 +1,10 @@
 body {
     background-color: #24252A;
+}
+html, body {
 
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .game img{
     width: 300px;
@@ -37,21 +41,46 @@ body {
         font-size: 5vw;
     }
 }
+@media (max-width: 720px){
+    .page{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 2.5vw;
+    }
+    
+}
 @media (min-width: 720px){
     .GameGrid{
         grid-template-columns: repeat(2, 20em);
+        
     }
+    .page {
+        margin-left: 200px;
+        margin-right: 200px;
+        
+    }
+    
 }
 @media (min-width: 1268px){
     .GameGrid{
         grid-template-columns: repeat(3, 20.5em);
     }
+    .page {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
 }
 @media (min-width: 1510px){
     .GameGrid{
         grid-template-columns: repeat(4, 21em);
+        
+    }
+    .page {
+        margin-left: 450px;
+        margin-right: 450px;
     }
 }
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
@@ -59,16 +88,30 @@ body {
 .page {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 100px;
     background-color: #46464b;
     border: solid #46464b 12px;
     border-radius: 15px;
+    margin-bottom: 70px;
 }
 .page a{
     text-decoration: none;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+
+} 
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #161618;
+
 }
