@@ -15,6 +15,13 @@ inputBox.onkeyup = (e)=>{
             linkTag.setAttribute("href", webLink);
             linkTag.click();
         }
+        if (event.keyCode == 13){
+            webLink = `../gamess/${userData}/${userData}.html`;
+            linkTag.setAttribute("href", webLink);
+            linkTag.click();
+        }
+        
+            
         emptyArray = suggestions.filter((data)=>{
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
         });
